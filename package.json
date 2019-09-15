@@ -1,0 +1,23 @@
+{
+  "name": "Learning-Functional-Progarmming-with-JavaScript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkorczyk/Learning-Functional-Progarmming-with-JavaScript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nkorczyk/Learning-Functional-Progarmming-with-JavaScript/issues"
+  },
+  "homepage": "https://github.com/nkorczyk/Learning-Functional-Progarmming-with-JavaScript#readme",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}
