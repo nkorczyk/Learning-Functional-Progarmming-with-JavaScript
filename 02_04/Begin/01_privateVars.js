@@ -1,23 +1,34 @@
 // Learning Functional Programming with Javascript
 // Chapter 02, Video 04, Exercise 01
 
-const myCounter = {
-  count: 0,
-  increment: function() {
-    this.count += 1
-  },
-  currentValue: function() {
-    return this.count
-  }
+// const counter = {
+//   count: 0,
+//   increment: function() {
+//     this.count += 1
+//   },
+//   currentValue: function() {
+//     return this.count
+//   }
+// }
+
+function createCounter(startAt) {
+  var count = startAt || 0;
+
+  return {
+    increment: function() {
+      count += 1
+    },
+    currentValue: function() {
+      return count
+    }
+  };
 }
 
-console.log(myCounter.currentValue())
+var counter = createCounter(5);
 
-myCounter.increment()
-myCounter.increment()
+console.log(counter.currentValue())
 
-console.log(myCounter.currentValue())
+counter.increment();
+counter.increment();
 
-myCounter.count = 999 // uh oh!
-
-console.log(myCounter.currentValue())
+console.log(counter.currentValue());
